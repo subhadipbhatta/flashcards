@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import HomePage from './pages/HomePage';
+import CategorySelectionPage from './pages/CategorySelectionPage';
+import StudySessionPage from './pages/StudySessionPage';
 import './App.css';
 
 function App() {
@@ -7,8 +9,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/study/category" element={<div>Category Selection for Study (Coming in Phase 2)</div>} />
-        <Route path="/quiz/category" element={<div>Category Selection for Quiz (Coming in Phase 4)</div>} />
+        <Route path="/study/category" element={<CategorySelectionPage />} />
+        <Route path="/study/:category" element={<StudySessionPage />} />
+        <Route path="/quiz/category" element={<CategorySelectionPage />} />
         <Route path="/stats" element={<div>Statistics Page (Coming in Phase 5)</div>} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
