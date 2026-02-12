@@ -71,3 +71,15 @@ Each flashcard has:
 - `spanish`: Spanish word/phrase
 - `english`: English translation
 - `quiz`: Quiz configuration with options
+
+## Development with GitHub Copilot
+
+This repository is configured with custom GitHub Copilot instructions to help developers work more efficiently. See:
+
+- 📖 **[Custom Agents Guide](./CUSTOM_AGENTS_GUIDE.md)** - Learn how to use custom agents with GitHub Copilot
+- ⚙️ **[Copilot Instructions](./.github/copilot-instructions.md)** - Project-specific instructions for Copilot
+
+The custom instructions help Copilot provide:
+- Context-aware code suggestions
+- Project-specific patterns and conventions
+- Consistent code style across the codebase
